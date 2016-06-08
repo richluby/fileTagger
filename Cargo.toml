@@ -3,3 +3,9 @@
 name = "file_tagger"
 version = "0.0.0"
 authors = [ "Michael Smythe, Richard Luby" ]
+
+[dependencies]
+log = "*"
+env_logger = "*"
+docopt = "0.6"
+rustc-serialize = "0.3"
