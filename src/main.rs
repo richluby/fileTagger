@@ -15,7 +15,7 @@ fn main(){
 	env_logger::init().unwrap();
 	let args = match file_tagger::validation::parse_cli_args() {
 		Ok(args) => args,
-		Err(err) => {error!("Error while parsing arguments: {:}", err.to_string()); process::exit(1)}
+		Err(err) => {error!("The argument could not be processed: {:}", err.to_string()); process::exit(1)},
 	};
 	debug!("Using args: {:?}", args);
 	println!("Compiled and ran successfully.");
