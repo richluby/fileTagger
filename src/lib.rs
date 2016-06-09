@@ -7,5 +7,7 @@ extern crate rustc_serialize;
 extern crate log;
 extern crate env_logger;
 
+extern crate docopt;
+
 // Declare available interfaces
 pub mod validation;
